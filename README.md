@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Job Board Platform
+
+A modern job board platform built with Next.js, TypeScript, and Tailwind CSS. This application allows companies to post job listings and candidates to search and apply for jobs.
+
+## Features
+
+- **User Authentication**
+  - Login & Registration with form validation
+  - Role-based access (Job Seekers and Companies)
+  - Demo accounts for testing
+
+- **Job Management**
+  - Browse job listings with search functionality
+  - Detailed job view with application option
+  - Company dashboard for managing job postings
+
+- **UI/UX**
+  - Responsive design for all devices
+  - Dark mode support
+  - Modern and clean interface
+
+## Tech Stack
+
+- **Frontend**: Next.js, TypeScript, Tailwind CSS
+- **State Management**: Zustand
+- **Form Validation**: React Hook Form with Zod
+- **Styling**: Tailwind CSS
+- **UI Enhancements**: Next-themes for dark mode
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd job-board
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Demo Accounts
 
-To learn more about Next.js, take a look at the following resources:
+For testing purposes, you can use the following demo accounts:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Job Seeker**:
+  - Email: john@example.com
+  - Password: password
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Company**:
+  - Email: company@example.com
+  - Password: password
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+job-board/
+├── src/
+│   ├── app/               # Next.js pages
+│   ├── components/        # React components
+│   │   ├── auth/          # Authentication components
+│   │   ├── jobs/          # Job-related components
+│   │   ├── layout/        # Layout components
+│   │   └── ui/            # Reusable UI components
+│   ├── lib/               # Utility functions
+│   ├── store/             # Zustand stores
+│   └── types/             # TypeScript types
+├── public/                # Static files
+└── package.json           # Project dependencies
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Current Status
+
+This is a frontend-focused implementation with mock data and simulated API calls. In a production environment, this would be connected to a backend API.
+
+### What's Working
+
+- Complete frontend UI with responsive design
+- Mock authentication flow with different user roles
+- Job listing, searching, and filtering
+- Job detail view and application functionality
+- Dark mode toggle
+- Company dashboard view
+
+### What's Missing
+
+- Backend API integration
+- Persistent storage
+- File uploads for resumes
+- Job posting functionality
+- User profile management
+- Admin features
+
+## Future Improvements
+
+With more time, the following features would be implemented:
+
+- Backend API using Node.js and Express/NestJS
+- Database integration with MongoDB or PostgreSQL
+- Real authentication with JWT or NextAuth
+- File uploads for resumes and company logos
+- Advanced filtering and sorting options
+- Email notifications
+- Admin panel for platform management
+- Analytics for companies
+- Recommendation system for job seekers
+
+## License
+
+MIT
