@@ -27,7 +27,7 @@ A modern job board platform built with Next.js, TypeScript, and Tailwind CSS. Th
 - **Styling**: Tailwind CSS
 - **UI Enhancements**: Next-themes for dark mode
 
-## Getting Started
+## Getting Sta
 
 ### Prerequisites
 
